@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Comforter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+.a {
+    height: 100vh;
+    display: flex;
+    align-items:center;
+
+}
+
+.a-left {
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 480px;
+}
+
+.a-card.bg{
+    position:absolute;
+    top: 50px;
+    left: 50px;
+    background-color:crimson;
+}
+.a-desc{
+    font-family: 'Comfortaa', cursive;
+    font-size: large;
+    
+}
+
+.a-title{
+    font-family: 'Comforter', cursive;
+    font-size: 80px;
+}
+ h1{
+    color:crimson;
+}
+.a-right {
+    flex:1;
+}
+.a-card {
+    width: 60%;
+    height: 70vh;
+    border-radius:30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.a-img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+@media screen and (max-width:480px) {
+    .a{
+      flex-direction: column;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .a-left {
+      width: 100%;
+    }
+
+    .a-card {
+      height: 30vh;
+    }
+
+    .a-card.bg, .a-award {
+      display: none;
+    }
+
+    .a-right{
+      padding: 20px;
+    }
+}
